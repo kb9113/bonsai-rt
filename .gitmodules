@@ -1,0 +1,6 @@
+[submodule "acorn"]
+	path = acorn
+	url = https://github.com/kb9113/acorn.git
+[submodule "odin-color"]
+	path = color
+	url = https://github.com/kb9113/odin-color.git

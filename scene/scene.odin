@@ -35,7 +35,7 @@ SceneMaterial :: union
     SceneMaterialDiffuse,
     SceneMaterialConductive,
     SceneMaterialDieletric,
-    SceneMaterialEmmisive
+    SceneMaterialEmissive
 }
 
 SceneMaterialDiffuse :: struct
@@ -59,7 +59,7 @@ SceneMaterialConductive :: struct
     ec : f32
 }
 
-SceneMaterialEmmisive :: struct
+SceneMaterialEmissive :: struct
 {
     material_name : string,
     color : [3]f32,
@@ -287,9 +287,9 @@ read_scene_material :: proc(json_obj : json.Object) -> SceneMaterial
             }
             return ans
         }
-        case "emmisive":
+        case "emissive":
         {
-            ans := SceneMaterialEmmisive{}
+            ans := SceneMaterialEmissive{}
             ans.material_name = material_name
             ans.color = [3]f32{
                 f32(color_r),

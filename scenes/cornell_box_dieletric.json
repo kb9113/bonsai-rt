@@ -138,8 +138,8 @@
             }
         },
         {
-            "material_name": "emmisiveWhite",
-            "type": "emmisive",
+            "material_name": "emissiveWhite",
+            "type": "emissive",
             "color": {
                 "r": 0.5,
                 "g": 0.352,
@@ -151,7 +151,7 @@
     "lights": [
         {
             "type": "object",
-            "material_name": "emmisiveWhite",
+            "material_name": "emissiveWhite",
             "obj_file": "scenes/square.obj",
             "transform": [
                 [0.235, -1.66103e-008, -7.80685e-009, -0.005],

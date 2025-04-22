@@ -85,12 +85,10 @@ find_and_build_corresponding_material :: proc(s : scene.Scene, material_name : s
                 ans.args[0] = v.ior
                 return ans
             }
-            case scene.SceneMaterialEmmisive:
+            case scene.SceneMaterialEmissive:
             {
                 if v.material_name != material_name { continue }
                 ans.material_type = 3
-                // color_srgb := color.SRGBColor{f64(v.color.r), f64(v.color.g), f64(v.color.b)}
-                // color_linear_rgb := color.srgb_to_linear_rgb(color_srgb)
                 color_linear_rgb := color.LinearRGBColor{f64(v.color.r), f64(v.color.g), f64(v.color.b)}
                 color_xyz := color.linear_rgb_to_xyz(color_linear_rgb)
                 switch s.settings.internal_color_mode

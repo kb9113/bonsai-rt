@@ -75,6 +75,6 @@ main :: proc()
     start_time := time.now()._nsec
     geometry.render(&device_context, &g)
     end_time := time.now()._nsec
-    fmt.println("renderd", s.settings.n_samples, "samples in", (end_time - start_time) / 1_000_000, "ms")
+    fmt.println(s.settings.n_samples, "samples in", (end_time - start_time) / 1_000_000, "ms")
     geometry.save_output_image_to_file(&device_context, &g, os.args[2])
 }
