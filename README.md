@@ -1,6 +1,6 @@
 # Bonsai RT
 
-Searchable documentation is available at https://calebmanning.net/bonsai-rt/.\
+Searchable documentation is available at https://calebmanning.net/bonsai-rt/. \
 \
 A fairly simple spectral renderer using vulkan ray acceleration.
 Supports diffuse, dieletric and conductive materials.
